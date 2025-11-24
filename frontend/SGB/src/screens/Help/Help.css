@@ -1,0 +1,69 @@
+:root {
+  --bg: #f6f0dc;
+  --text: #1e1e1e;
+  --primary: #2b5dba;
+  --card: #ffffff;
+  --border: #d4d4d4;
+}
+
+.help-page {
+  min-height: calc(100vh - 120px);
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.help-card {
+  width: 750px;
+  max-width: 92vw;
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  border: 1px solid var(--border);
+}
+
+.help-title {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.help-section {
+  margin-bottom: 1.7rem;
+}
+
+.help-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.help-textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  resize: none;
+  font-size: 1rem;
+}
+
+.help-btn {
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.help-btn:hover {
+  background: #1f4a9e;
+}

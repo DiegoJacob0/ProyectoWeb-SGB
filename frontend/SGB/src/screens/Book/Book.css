@@ -1,0 +1,111 @@
+.book-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f3e7; /* tu fondo original */
+}
+
+.book-main {
+  flex: 1;
+  padding: 20px;
+}
+
+.header .titulo {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #002b7f;
+}
+
+.buscador {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.input-buscador {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.btn-search {
+  padding: 10px 15px;
+  background-color: #002b7f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-search:hover {
+  background-color: #ffd700;
+  color: #002b7f;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.book-card {
+  width: 180px;
+  background-color: #f5f5f5; /* color de las tarjetas */
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+.book-card h3 {
+  font-size: 1rem;
+  margin: 10px 0 5px;
+  color: #002b7f;
+  min-height: 38px;
+}
+
+.book-card p {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 0 0 10px 0;
+  min-height: 32px;
+}
+
+.book-img {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.btn-reserve {
+  padding: 8px 12px;
+  background-color: #002b7f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-reserve:hover {
+  background-color: #ffd700;
+  color: #002b7f;
+}

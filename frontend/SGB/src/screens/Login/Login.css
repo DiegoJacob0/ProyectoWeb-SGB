@@ -1,0 +1,130 @@
+:root {
+  --bg: #f2efe0;
+  --card: #ffffff;
+  --text: #1a1a1a;
+  --muted: #6b6b6b;
+  --blue: #123a8b;
+  --radius: 14px;
+  --shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto;
+  background: var(--bg);
+  color: var(--text);
+}
+.login-page { min-height: 100%; }
+
+.login-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  background: rgba(0,0,0,0);
+}
+.brand {
+  font-weight: 700;
+  color: #1E3A8A;
+  font-size: 28px;
+  display: inline-flex;
+  align-items: center;
+}
+.brand:before {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-right: 8px;
+  opacity: 0.9;
+}
+
+.login-container {
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 420px;
+  padding: 28px 40px;
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 2px solid #cbd5e1;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+.card-title {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  margin: 8px 0 12px;
+}
+.welcome-title {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0 0 20px;
+  color: #111;
+}
+.form { display: flex; flex-direction: column; gap: 14px; }
+.field { display: flex; flex-direction: column; align-items: stretch; text-align: left; }
+.input {
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #f8f9fa;
+  font-size: 14px;
+  outline: none;
+}
+.input::placeholder { color: #a0a0a0; }
+.input:focus { border-color: #4f6bd3; background: #fff; }
+.error { border-color: #e11d48; }
+.error-text {
+  font-size: 12px;
+  color: #e11d48;
+  margin-top: 4px;
+}
+.error-banner {
+  font-size: 13px;
+  color: #e11d48;
+  margin: 6px 0 0;
+}
+.btn-primary {
+  height: 46px;
+  border: none;
+  border-radius: 6px;
+  background: #1E3A8A;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .04s ease;
+}
+.btn-primary:hover { background: #254eaf; }
+.btn-primary:active { transform: translateY(1px); }
+
+.signup {
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.link-disabled {
+  color: #1E3A8A;
+  font-weight: 600;
+  cursor: default;
+  text-decoration: none;
+}
+.input.error { border-color: #e11d48; }
+
+@media (max-width: 520px) {
+  .card { width: 90%; padding: 20px; }
+  .welcome-title { font-size: 26px; }
+}

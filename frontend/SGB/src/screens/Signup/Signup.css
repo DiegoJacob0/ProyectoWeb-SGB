@@ -1,0 +1,140 @@
+:root {
+  --bg: #f2efe1;
+  --card: #fff;
+  --text: #1a1a1a;
+  --primary: #1e3a8a;
+  --primary-dark: #1a2f74;
+  --border: #cbd5e1;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Página */
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 16px;
+  min-height: 100%;
+}
+
+.signup-header {
+  align-self: flex-start;
+  padding: 8px 16px;
+}
+
+.brand {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+/* Card */
+.signup-container {
+  width: 100%;
+  max-width: 500px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 34px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* Form */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 14px;
+  color: var(--primary);
+  text-transform: uppercase;
+}
+
+/* Campo */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-field label {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Inputs */
+.signup-form input,
+.signup-form select {
+  height: 42px;
+  padding: 0 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 15px;
+  background: #fafafa;
+  transition: .2s;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+  border-color: var(--primary);
+  background: #fff;
+  box-shadow: 0 0 0 2px rgba(30,58,168,.15);
+  outline: none;
+}
+
+/* Mostrar contraseña */
+.show-btn {
+  background: none;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+  font-size: 14px;
+  align-self: flex-end;
+  margin-top: -6px;
+}
+
+.show-btn:hover {
+  color: var(--primary-dark);
+}
+
+/* Botón principal */
+.primary-btn {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  height: 48px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: .2s;
+}
+
+.primary-btn:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 520px) {
+  .signup-container { padding: 26px; }
+}

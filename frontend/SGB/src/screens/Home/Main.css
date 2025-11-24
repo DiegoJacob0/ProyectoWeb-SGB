@@ -1,0 +1,137 @@
+    .hero-section {
+    background-color: #D4AF37;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    flex-wrap: wrap;
+  }
+
+  .hero-text {
+    max-width: 600px;
+  }
+
+  .hero-text h2 {
+    font-size: 40px;
+    color: #1A1A1A;
+  }
+
+  .hero-text p {
+    font-size: 20px;
+    color: #4B5563;
+  }
+
+  .hero-image img {
+    width: 250px;
+  }
+
+  .books-section {
+    background-color: F5F3E7;
+    padding: 60px;
+    text-align: center;
+  }
+
+  .book-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+  }
+
+  .book-gallery img {
+    width: 120px;
+    border: 10px solid #1E3A8A;
+    border-radius: 8px;
+  }
+
+  .about-section {
+    background-color: #1E3A8A;
+    color: white;
+    padding: 60px;
+    text-align: center;
+  }
+  body {
+    margin: 0;
+  }
+
+  /* FEATURES */
+  .features-section {
+    background-color: #F5F3E7;
+    padding: 60px;
+    text-align: center;
+  }
+
+  .features-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+  }
+
+  .feature-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .feature-card .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  /* TESTIMONIOS */
+  .testimonials-section {
+    background-color: #D4AF37;
+    padding: 60px;
+    text-align: center;
+  }
+
+  .testimonials-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+  }
+
+  .testimonial-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    color: #1A1A1A;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .quote {
+    font-style: italic;
+  }
+
+  .author {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  /* CTA FINAL */
+  .cta-section {
+    background: #1E3A8A;
+    padding: 70px;
+    text-align: center;
+    color: white;
+  }
+
+  .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    background: #D4AF37;
+    color: #1A1A1A;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .cta-button:hover {
+    background: #b5902f;
+  }

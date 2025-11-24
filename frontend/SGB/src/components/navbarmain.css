@@ -1,0 +1,47 @@
+.navbar {
+  background-color: #002b7f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;        /* Igual al navbar-menu */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* En lugar de botones blancos, ahora son enlaces estilo navbar-menu */
+.nav-buttons .btn {
+  color: white;
+  background: none;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+}
+
+.nav-buttons .btn:hover {
+  color: #ffd700;            /* Igual que navbar-menu */
+  background: none;
+}

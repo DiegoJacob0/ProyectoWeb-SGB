@@ -1,0 +1,78 @@
+.footer {
+  background: #0d0d0d;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  font-size: 15px;
+  gap: 40px;
+  border-top: 2px solid #222;
+  font-family: "Inter", sans-serif;
+}
+
+/* Títulos */
+.footer h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+/* Secciones */
+.footer-left,
+.footer-center,
+.footer-right {
+  min-width: 200px;
+}
+
+/* Texto general */
+.footer p {
+  margin: 6px 0;
+  color: #cccccc;
+}
+
+/* Listas */
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.footer li {
+  margin: 8px 0;
+}
+
+/* Links */
+.footer a {
+  text-decoration: none;
+  color: #cccccc;
+  transition: 0.2s ease-in-out;
+}
+
+/* Hover: color suave + efecto deslizante */
+.footer a:hover {
+  color: #4da3ff;
+  padding-left: 4px;
+}
+
+/* Línea divisoria sutil en pantallas grandes */
+@media (min-width: 800px) {
+  .footer-center {
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    padding: 0 25px;
+  }
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .footer {
+    text-align: center;
+  }
+  .footer-center {
+    border: none;
+    padding: 0;
+  }
+}
